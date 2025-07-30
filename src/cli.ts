@@ -23,7 +23,8 @@ program
     try {
       await emitter.clone(targetDir);
       console.log('Project created!');
-      console.log(`\nNext steps:\n  cd ${projectName}\n  npm install\n  npm run dev`);
+      console.log(`\nNext steps:\n  cd ${projectName}\n  npm install\n  npm run start`);
+      return
     } catch (err) {
       console.error('Error cloning template:', err);
       process.exit(1);
