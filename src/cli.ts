@@ -86,7 +86,7 @@ program
       }
 
       // Update apiGatewayName in all function config files
-      const apisDir = join(targetDir, "src", "apis", "examples");
+      const apisDir = join(targetDir, "src", "api", "examples");
       updateApiGatewayNameInConfigFiles(apisDir, projectName);
 
       console.log("Project created!");
